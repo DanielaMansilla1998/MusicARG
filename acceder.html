@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sitio web dedicado a informar acerca de Shows y eventos de rock y metal internacional que se realizan en Argentina.">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/formulario-acceso.css">
+    <title>Acceso al sistema</title>
+</head>
+
+<body>
+
+    <div class="titulo-sitio">
+        <h1>Shows en Argentina</h1>
+        <h2>Tu espacio de información sobre shows de rock y metal en Argentina.</h2>
+    </div>
+
+
+    <nav>
+        <ul class="opciones-navbar">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/proximos.html">Próximos eventos</a></li>
+            <li><a href="">Shows históricos</a></li>
+            <li><a href="">Recomendados</a></li>
+            <li><a href="/acceder.html">Acceder</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="contenedor_formulario">
+            <div class="contenedor_formulario_botones">
+                <button class="botones_formulario">Registrarse</button>
+                <button class="botones_formulario">Ingresar</button>
+            </div>
+
+            <div class="contenedor_formulario_contenido">
+                <div class="contenedor_formulario_contenido_campos_dobles">
+                    <div class="contenedor_formulario_contenido_espacio_campo">
+                        <label>Nombre:</label>
+                        <input 
+                           class="campo_formulario" 
+                           type="text"
+                           required
+                        >
+                    </div>
+                    <div  class="contenedor_formulario_contenido_espacio_campo">
+                        <label>Apellido:</label>
+                        <input 
+                           class="campo_formulario" 
+                           type="text"
+                           required
+                        >
+                    </div>
+                </div>
+
+                <div class="contenedor_formulario_contenido_espacio_campo">
+                    <label>Nombre de usuario:</label>
+                    <input 
+                       class="campo_formulario" 
+                       type="text"
+                       required
+                    >
+                </div>
+
+                <div class="contenedor_formulario_contenido_espacio_campo">
+                    <label>Mail:</label>
+                    <input 
+                       class="campo_formulario" 
+                       type="text"
+                       required
+                    >
+                </div>
+
+                <div class="contenedor_formulario_contenido_espacio_campo">
+                    <label>Contraseña:</label>
+                    <input 
+                       class="campo_formulario" 
+                       type="text"
+                       placeholder="Mínimo 6 caracteres: minúsuculas, mayúsculas y símbolos."
+                       required
+                    >
+                </div>
+
+                <div class="contenedor_formulario_botones">
+                    <button class="botones_formulario botones_validar_formulario">Cargar datos</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

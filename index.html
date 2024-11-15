@@ -4,39 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitio web dedicado a informar acerca de Shows y eventos que se realizan en Argentina">
+    <meta name="description"
+        content="Sitio web dedicado a informar acerca de Shows y eventos de rock y metal internacional que se realizan en Argentina.">
     <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cuadros.css">
+    <link rel="stylesheet" href="/css/card-shows-especiales.css">
     <title>Shows en Argentina</title>
 </head>
 
 <body>
 
-    <h1>Shows en Argentina</h1>
+    <div class="titulo-sitio">
+        <h1>Shows en Argentina</h1>
+        <h2>Tu espacio de información sobre shows de rock y metal en Argentina.</h2>
+    </div>
+
 
     <nav>
-        <ul>
-            <li><a href="/form.html">Registrar show</a></li>
-            <li>Próximos eventos</li>
+        <ul class="opciones-navbar">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/proximos.html">Próximos eventos</a></li>
+            <li><a href="">Shows históricos</a></li>
+            <li><a href="">Recomendados</a></li>
+            <li><a href="/acceder.html">Acceder</a></li>
         </ul>
     </nav>
 
     <main>
-        <p>Argentina es el país favorito para muchos de los artistas, grupos y bandas al momento de embarcarse en una
+
+        <img class="imagen_principal" src="./img/lollaarg2018.webp" alt="">
+        <!--
+<p>Argentina es el país favorito para muchos de los artistas, grupos y bandas al momento de embarcarse en una
             gira.</p>
-        <img src="/img/movistararena.jpg" alt="Imágen referencia de eventos en vivo con público completo - Movistar Arena Argentina">
+
+            <img class="imagen_principal" src="/img/lollapalooza.jpg"
+            alt="Imágen del público en una edición del festival lollapalooza en Argentina">
+            -->
+
     </main>
 
-    <section>
-        <h2>¿Por qué Argentina y no otro país de LATAM?</h2>
-        <ul>
-            <li>Público: pasional, eufórico, con ganas de demostrar su amor por la música y dar lo mejor de sí.</li>
-            <li>Predios: contamos con bares, teatros, arenas, micro-estadios, estadios y predios abiertos diversos
+    <section class="contenedor_cuadro">
+        <div class="contenedor_cuadro_encabezado">
+            <h2>¿Por qué Argentina y no otro país de LATAM?</h2>
+        </div>
+
+        <ul class="contenedor_cuadro_columnas">
+            <li> <span>Público:</span> pasional, eufórico, con ganas de demostrar su amor por la música y dar lo mejor
+                de sí.</li>
+            <li> <span>Predios:</span> contamos con bares, teatros, arenas, micro-estadios, estadios y predios abiertos
+                diversos
                 adaptados para
                 cubrir eventos en lugares cerrados y abiertos acorde a las necesidades del público, banda y capacidad
                 necesaría
                 para un evento.
             </li>
-            <li>Precios: atractivo para los extranjeros al momento de decidirse a que país ir para seguir una gira por
+            <li> <span>Precios:</span> atractivo para los extranjeros al momento de decidirse a que país ir para seguir
+                una gira por
                 sus precios
                 accesibles tanto para viaje, estadía y evento. Excelente oportunidad especialmente para europeos en
                 comparación con
@@ -44,9 +69,107 @@
             </li>
         </ul>
 
-        <img src="/img/lollapalooza.jpg" alt="Imágen del público en una edición del festival lollapalooza en Argentina">
+        <div class="contenedor_imagenes_dobles">
+            <img src="/img/movistararena.jpg"
+                alt="Imágen referencia de eventos en vivo con público completo - Movistar Arena Argentina">
+            <img src="/img/lollapalooza.jpg" alt="Imágen del festival Lollapalooza Argentina edición 2022.">
+        </div>
     </section>
 
+    <section class="contenedor_cuadro">
+        <div class="contenedor_cuadro_encabezado">
+            <h2>Recomendaciones:</h2>
+        </div>
+
+        <div class="divisor_contenedores_cuadro">
+            <div class="contenedores_individuales_cuadro">
+                <h3 class="encabezado_naranja">COMPRA DE ENTRADAS</h3>
+                <ul class="listado">
+                    <li>Elegí el sector que más se acomode a tus necesidades, preferencias y formas de vivir un show en
+                        vivo.
+                    <li> No elijas campo si llegas sobre la hora, si el público es muy inquieto y eso no es de tu agrado
+                        o si tenes poca tolerancia al calor.
+                    </li>
+                    <li> Al momento de comprar una platea, verificá si esta ubicación tiene butacas numeradas.</li>
+                    <li> Para la preventa, controlá si hay alguna preventa especial con algún banco en particular. Dato
+                        especial: en general, si es así, suelen tener cuotas sin interés o algún descuento con ese
+                        banco.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contenedores_individuales_cuadro">
+                <h3 class="encabezado_naranja">DÍA DEL EVENTO</h3>
+                <ul class="listado">
+                    <li>No olvides de llevar ropa y calzado cómodo acorde a la temperatura y al sector al que vas a ir.
+                    <li> Si vas a campo o sector sin numerar, se recomienda que asistas desde el mediodia para evitar
+                        quedar muy al fondo.
+                    </li>
+                    <li> También se recomienda llevar dinero para poder comprar bebidas, alimentos o algún producto del
+                        merchandising oficial de la banda.
+                    </li>
+                    <li> ...y lo más importante, no olvides tu entrada y disfruta de uno de los mejores días de tu
+                        vida!!
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="espacio_shows_especiales">
+
+        <div class="contenedor_label_anuncio">
+            <label>Próximamente</label>
+        </div>
+
+        <div class="contenedor_card_especial">
+                <figure class="contenedor_card_especial_imagen"></figure>
+
+                <div class="contenedor_card_especial_info">
+                    <h4>IRON MAIDEN: The Future Past Tour 2024</h4>
+
+                    <div class="contenedor_card_especial_fechas">
+                        <p>01/12/24 - Estadio Huracán</p>
+                        <p>02/12/24 - Movistar Arena</p>
+                    </div>
+
+                    <label>Rango de precios: $50.000 - $190.000</label>
+
+                    <div class="contenedor_card_especial_disponibilidad">
+                        <label>AGOTADO</label>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+    <section class="espacio_shows_especiales">
+        <div class="contenedor_label_anuncio">
+            <label>Últimos</label>
+        </div>
+
+        <div class="contenedor_card_especial">
+            <figure class="contenedor_card_especial_imagen_2"></figure>
+
+            <div class="contenedor_card_especial_info">
+                <h4>Franz Ferdinand</h4>
+
+                <div class="contenedor_card_especial_fechas">
+                    <p>11/11/24 - Estadio Obras</p>
+                </div>
+
+                <label>Rango de precios: $60.000 - $90.000</label>
+
+                <div class="contenedor_card_especial_disponibilidad">
+                    <label>Disponible</label>
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+    <footer>@2024 - MusicARG</footer>
 
 </body>
 

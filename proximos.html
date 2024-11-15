@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/card-entrada.css">
+    <title>Próximos shows</title>
+</head>
+
+<body>
+
+    <div class="titulo-sitio">
+        <h1>Shows en Argentina</h1>
+        <h2>Tu espacio de información sobre shows de rock y metal en Argentina.</h2>
+    </div>
+
+
+    <nav>
+        <ul class="opciones-navbar">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/proximos.html">Próximos eventos</a></li>
+            <li><a href="">Shows históricos</a></li>
+            <li><a href="">Recomendados</a></li>
+            <li><a href="/acceder.html">Acceder</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="subtitulos">Registrar nuevo show:</h1>
+
+    <div class="contenedor_entrada">
+
+        <div class="contenedor_entrada_borde_color">
+
+        </div>
+
+        <form class="contenedor_entrada_datos" action="" method="POST">
+
+            <div class="contenedor_entrada_datos_nombre">
+                <label>Artista/Banda/Músico:</label>
+                <input 
+                   class="contenedor_entrada_datos_inputs contenedor_entrada_datos_inputs_nombre" 
+                   type="text" 
+                   placeholder="Nombre del músico" 
+                   required
+                >
+            </div>
+
+            <div class="contenedor_entrada_datos_campos_dobles">
+                <label>Fecha del evento:</label>
+                <input 
+                   class="contenedor_entrada_datos_fecha_hora" 
+                   type="date" 
+                   required
+                >
+
+
+                <label>Lugar:</label>
+                <select class="contenedor_entrada_datos_fecha_hora" name="" id="">
+                    <option value="">Movistar Arena</option>
+                    <option value="">Hipodromo de San Isidro</option>
+                    <option value="">Campo Argentino de Polo</option>
+                    <option value="">Estadio Velez</option>
+                    <option value="">Estadio River Plate</option>
+                    <option value="">Estadio Obras</option>
+                </select>
+            </div>
+
+
+            <div class="contenedor_entrada_datos_campos_dobles">
+                <label>Estado:</label>
+                <select class="contenedor_entrada_datos_fecha_hora" name="" id="">
+                    <option value="">Activo</option>
+                    <option value="">Agotado</option>
+                    <option value="">Próximamente</option>
+                    <option value="">Suspendido</option>
+                    <option value="">Cancelado</option>
+                </select>
+
+                <label>Rango precios:</label>
+                <input class="contenedor_entrada_datos_inputs" type="text" placeholder="Ingrese un rango de precios.">
+            </div>
+
+
+            <button class="contenedor_entrada_boton" type="submit">Ingresar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

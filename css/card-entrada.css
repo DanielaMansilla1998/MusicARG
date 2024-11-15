@@ -1,0 +1,87 @@
+/* ESTILOS DE CARD EN FORMATO DE ENTRADA */
+
+.contenedor_entrada {
+    height: 400px;
+    width: 70%;
+    margin-left: 15%;
+    border: 2px solid #5C708F;
+    border-radius: 10px;
+    -webkit-box-shadow: -12px 10px 24px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -12px 10px 24px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: -12px 10px 24px -11px rgba(0, 0, 0, 0.75);
+    font-weight: bolder;
+    display: flex;
+}
+
+.contenedor_entrada_borde_color {
+    width: 20%;
+    background-color: #5C708F;
+    border-right: 5px solid rgb(243, 162, 11);
+}
+
+.contenedor_entrada_datos {
+    height: 350px;
+    width: 70%;
+    margin-left: 2%;
+    padding: 2%;
+    color: #5C708F;
+    font-weight: bolder;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_entrada_datos_nombre {
+    height: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.contenedor_entrada_datos_inputs {
+    height: 50px;
+    border: 1px dashed #5C708F;
+    border-radius: 10px;
+    text-align: center;
+    color: #5C708F;
+}
+
+.contenedor_entrada_datos_inputs:focus{
+    border: none;
+}
+
+.contenedor_entrada_datos_inputs_nombre {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+
+.contenedor_entrada_datos_campos_dobles {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contenedor_entrada_datos_fecha_hora {
+    height: 40px;
+    border: 1px dashed #5C708F;
+    border-radius: 10px;
+}
+
+.contenedor_entrada_boton {
+    height: 50px;
+    border: #647b9e;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #5C708F;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.contenedor_entrada_boton:hover {
+    background-color: #4d5e77;
+    font-size: 1.2em;
+    font-weight: bold;
+}

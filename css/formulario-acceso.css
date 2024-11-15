@@ -1,0 +1,67 @@
+.contenedor_formulario{
+    width: 80%;
+    height: 500px;
+    margin: 5% 10%;
+    border-radius: 10px;
+    background-color: #5C708F;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    -webkit-box-shadow: -12px 10px 24px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -12px 10px 24px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: -12px 10px 24px -11px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor_formulario_botones{
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones_formulario{
+    width: 50%;
+    height: 70px;
+    margin-top: 5%;
+    color: #5C708F;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.contenedor_formulario_contenido{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_formulario_contenido_campos_dobles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_formulario_contenido_espacio_campo{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.campo_formulario{
+    width: 90%;
+    height: 40px;
+    padding: 2%;
+    border-radius: 10px;
+    border: none;
+    color: #5C708F;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.botones_validar_formulario{
+    margin-left: 25%;
+    border: none;
+    border-radius: 10px;
+}
