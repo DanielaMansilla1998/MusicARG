@@ -4,10 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniela Ailen Mansilla">
+    <meta name="copyright" content="Daniela Ailen Mansilla" />
+    <meta http-equiv="Content-Language" content="Español">
     <meta name="description"
         content="Sitio web dedicado a informar acerca de Shows y eventos de rock y metal internacional que se realizan en Argentina.">
+    <meta name="keywords" content="Shows, eventos, festivales, música, conciertos, Argentina, rock, pop, metal" />
+
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icono -->
     <link rel="shortcut icon" href="/img/favicon.ico">
 
+    <!-- Estilos CSS propios-->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/formulario-acceso.css">
     <title>Acceso al sistema</title>
@@ -15,22 +29,26 @@
 
 <body>
 
-    <div class="titulo-sitio">
-        <h1>Shows en Argentina</h1>
-        <h2>Tu espacio de información sobre shows de rock y metal en Argentina.</h2>
-    </div>
+    <!-- Contenedor del título + navbar -->
+    <header>
+        <div class="titulo-sitio">
+            <h1>Shows en Argentina</h1>
+            <h2>Tu espacio de información sobre shows de rock, metal y pop en Argentina.</h2>
+        </div>
+
+        <nav>
+            <ul class="opciones-navbar">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/proximos.html">Próximos eventos</a></li>
+                <li><a href="/shows-historicos.html">Shows históricos</a></li>
+                <li><a href="/recomendados.html">Recomendados</a></li>
+                <li><a href="/acceder.html">Acceder</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-    <nav>
-        <ul class="opciones-navbar">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/proximos.html">Próximos eventos</a></li>
-            <li><a href="">Shows históricos</a></li>
-            <li><a href="">Recomendados</a></li>
-            <li><a href="/acceder.html">Acceder</a></li>
-        </ul>
-    </nav>
-
+    <!-- Formulario de acceso -->
     <main>
         <div class="contenedor_formulario">
             <div class="contenedor_formulario_botones">
@@ -42,48 +60,28 @@
                 <div class="contenedor_formulario_contenido_campos_dobles">
                     <div class="contenedor_formulario_contenido_espacio_campo">
                         <label>Nombre:</label>
-                        <input 
-                           class="campo_formulario" 
-                           type="text"
-                           required
-                        >
+                        <input class="campo_formulario" type="text" required>
                     </div>
-                    <div  class="contenedor_formulario_contenido_espacio_campo">
+                    <div class="contenedor_formulario_contenido_espacio_campo">
                         <label>Apellido:</label>
-                        <input 
-                           class="campo_formulario" 
-                           type="text"
-                           required
-                        >
+                        <input class="campo_formulario" type="text" required>
                     </div>
                 </div>
 
                 <div class="contenedor_formulario_contenido_espacio_campo">
                     <label>Nombre de usuario:</label>
-                    <input 
-                       class="campo_formulario" 
-                       type="text"
-                       required
-                    >
+                    <input class="campo_formulario" type="text" required>
                 </div>
 
                 <div class="contenedor_formulario_contenido_espacio_campo">
                     <label>Mail:</label>
-                    <input 
-                       class="campo_formulario" 
-                       type="text"
-                       required
-                    >
+                    <input class="campo_formulario" type="text" required>
                 </div>
 
                 <div class="contenedor_formulario_contenido_espacio_campo">
                     <label>Contraseña:</label>
-                    <input 
-                       class="campo_formulario" 
-                       type="text"
-                       placeholder="Mínimo 6 caracteres: minúsuculas, mayúsculas y símbolos."
-                       required
-                    >
+                    <input class="campo_formulario" type="password"
+                        placeholder="Mínimo 6 caracteres: minúsuculas, mayúsculas y símbolos." required>
                 </div>
 
                 <div class="contenedor_formulario_botones">
@@ -93,6 +91,18 @@
             </div>
         </div>
     </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <label> &copy; 2024 - MusicARG </label>
+        <div class="contenedor_redes">
+            <a href=""><img class="redes" src="/img/iconos/facebook.png" alt="Icono de la red social Facebook."></a>
+            <a href=""><img class="redes" src="/img/iconos/instagram.png" alt="Icono de la red social Instagram."></a>
+            <a href=""><img class="redes" src="/img/iconos/twitter.png" alt="Icono de la red social X."></a>
+        </div>
+    </footer>
+
 </body>
 
 </html>

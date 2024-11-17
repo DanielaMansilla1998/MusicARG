@@ -1,9 +1,9 @@
 /* ESTILOS DE CARD EN FORMATO DE ENTRADA */
-
 .contenedor_entrada {
     height: 400px;
-    width: 70%;
-    margin-left: 15%;
+    width: 85%;
+    margin-left: 7%;
+    margin-bottom: 10%;
     border: 2px solid #5C708F;
     border-radius: 10px;
     -webkit-box-shadow: -12px 10px 24px -11px rgba(0, 0, 0, 0.75);
@@ -14,14 +14,14 @@
 }
 
 .contenedor_entrada_borde_color {
-    width: 20%;
+    width: 15%;
     background-color: #5C708F;
     border-right: 5px solid rgb(243, 162, 11);
 }
 
 .contenedor_entrada_datos {
     height: 350px;
-    width: 70%;
+    width: 83%;
     margin-left: 2%;
     padding: 2%;
     color: #5C708F;
@@ -36,11 +36,12 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 1em;
 }
 
 .contenedor_entrada_datos_inputs {
     height: 50px;
+    min-width: fit-content;
     border: 1px dashed #5C708F;
     border-radius: 10px;
     text-align: center;
@@ -84,4 +85,61 @@
     background-color: #4d5e77;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+
+
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+
+    .contenedor_entrada {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedor_entrada_borde_color {
+        width: 100%;
+        height: 15%;
+        border-right: none;
+        border-bottom: 5px solid rgb(243, 162, 11);
+    }
+    
+    .contenedor_entrada_datos {
+        height: 85%;
+        width: 90%;
+        margin-inline: 5%;
+        justify-content: space-between;
+    }
+
+    .contenedor_entrada_datos_nombre, .contenedor_entrada_boton {
+        font-size: 0.9em;
+    }
+    
+    .contenedor_entrada_datos_inputs {
+        width: 100%;
+    }
+
+    .contenedor_entrada_datos_inputs_nombre {
+        font-size: 1.3em;
+    }
+      
+    .contenedor_entrada_datos_campos_dobles {
+        height: 170px;
+        flex-direction: column;
+    }
+    
+    .contenedor_entrada_datos_fecha_hora {
+        height: 50px;
+        padding: 2%;
+    }
+    
+}
+
+
+
+/* RESPONSIVE CELULAR */
+@media (max-width: 480px) {
+   
 }

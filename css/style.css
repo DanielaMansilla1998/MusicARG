@@ -1,89 +1,306 @@
 /* ESTILOS GENERALES */
-
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
-.titulo-sitio{
+.titulo-sitio {
     padding: 2%;
     text-align: center;
     background-color: #5C708F;
     color: #fff;
 }
 
-nav{
+.titulo-sitio h1 {
+    font-size: 2.2em;
+}
+
+.titulo-sitio h2 {
+    font-size: 1.5em;
+}
+
+nav {
     padding: 2%;
     background-color: #5C708F;
     color: #fff;
     border-top: 2px solid #fff;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.opciones-navbar{
+.opciones-navbar {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    font-size: 1em;
 }
 
-a:hover{
+a:hover {
     font-size: 1.2em;
     text-decoration: underline 2px solid #fff;
 }
 
-.subtitulos{
+.subtitulos {
     margin: 5%;
     color: #5C708F;
 }
 
-p{
+p {
     margin: 3%;
 }
 
-.imagen_principal{
-    width: 100%;
+.colores-carousel {
+    background-color: #5C708F;
 }
 
-.contenedor_imagenes_dobles{
+.imagenes-carousel-principal {
+    border-top: 3px solid #fff;
+}
+
+.contenedor_imagenes_dobles {
     margin: 5% 8%;
     display: flex;
     justify-content: space-evenly;
 }
 
 /* CONTENEDOR CUADRO DIVIDIDO EN 2 CONTENEDORES */
-.divisor_contenedores_cuadro{
+.divisor_contenedores_cuadro {
     display: flex;
 }
 
-.contenedores_individuales_cuadro{
+.contenedores_individuales_cuadro {
     width: 50%;
     padding: 2%;
     justify-content: space-between;
 }
 
-.listado li{
-    padding: 2%;
-    color: #5C708F;
-}
-
-.encabezado_naranja{
+.encabezado_naranja {
     margin-bottom: 3%;
     color: #F3A20B;
     text-align: center;
 }
 
+.listado li {
+    padding: 2%;
+    color: #5C708F;
+}
+
+/* SECCIÓN NOSOTROS */
+.nosotros-dudas {
+    width: 60%;
+    margin-bottom: 5%;
+    justify-self: center;
+}
+
+h3 {
+    margin-left: 5%;
+    color: #5C708F;
+    font-size: 1.4em;
+}
+
+.nosotros-dudas div {
+    color: #5C708F;
+    font-size: 1em;
+}
+
+.accordion-colores {
+    background-color: #5C708F !important;
+    color: #fff !important;
+}
+
+
 /* FOOTER */
-footer{
-    height: 80px;
+footer {
+    height: 100px;
     padding: 2%;
     text-align: center;
     background-color: #5C708F;
     color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor_redes {
+    width: 50%;
+}
+
+.redes {
+    width: 6%;
+    margin-left: 5%;
+    color: #fff;
+}
+
+.redes:hover {
+    width: 7%;
+}
+
+
+/* CUADROS Y TABLAS*/
+.contenedor_cuadro {
+    margin: 3% 0%;
+}
+
+.contenedor_cuadro_encabezado {
+    padding: 2%;
+    color: #fff;
+    background-color: #5C708F;
+    text-align: center;
+}
+
+.contenedor_cuadro_columnas {
+    border-bottom: 5px solid #5C708F;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    color: #5C708F;
+}
+
+.contenedor_cuadro_columnas li {
+    min-width: 25%;
+    border-right: 5px solid #5C708F;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+.contenedor_cuadro_columnas span {
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
+
+
+
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+
+    .titulo-sitio h1 {
+        font-size: 2em;
+    }
+
+    .titulo-sitio h2 {
+        font-size: 1em;
+    }
+
+    .opciones-navbar {
+        height: 200px;
+        flex-direction: column;
+        justify-self: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .contenedor_cuadro_encabezado h2 {
+        font-size: 1.2em;
+    }
+
+    .contenedor_cuadro_columnas li {
+        font-size: 0.9em;
+    }
+
+    .encabezado_naranja {
+        font-size: 1.2em;
+    }
+
+    .listado li {
+        font-size: 0.9em;
+    }
+
+
+    footer {
+        padding: 5%;
+    }
+
+    .contenedor_redes {
+        width: 70%;
+    }
+
+}
+
+
+/* RESPONSIVE CELULAR */
+@media (max-width: 480px) {
+
+    .titulo-sitio h1 {
+        font-size: 1.5em;
+    }
+
+    .titulo-sitio h2, .opciones-navbar {
+        font-size: 0.8em;
+    }
+
+    .contenedor_cuadro_encabezado h2 {
+        font-size: 1em;
+    }
+
+    .contenedor_cuadro_columnas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .contenedor_cuadro_columnas li{
+        min-height: 150px;
+        width: 100%;
+        padding: 3%;
+        margin: 0%;
+        border-right: none;
+        border-width: 100%;
+    }
+
+    .contenedor_cuadro_columnas span {
+        margin-bottom: 5%;
+    }
+
+    .divisor_contenedores_cuadro {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedores_individuales_cuadro {
+        width: 100%;
+    }
+    
+    .encabezado_naranja {
+        font-size: 1em;
+    }
+
+    footer {
+        height: 300px;
+        flex-direction: column-reverse;
+    }
+    
+    .contenedor_redes {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .redes {
+        width: 13%;
+    }
+    
+    .redes:hover {
+        width: 16%;
+    }
+    
+
 }

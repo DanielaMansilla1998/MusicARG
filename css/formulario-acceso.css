@@ -1,4 +1,4 @@
-.contenedor_formulario{
+.contenedor_formulario {
     width: 80%;
     height: 500px;
     margin: 5% 10%;
@@ -13,35 +13,36 @@
     box-shadow: -12px 10px 24px -11px rgba(0, 0, 0, 0.75);
 }
 
-.contenedor_formulario_botones{
+.contenedor_formulario_botones {
     width: 50%;
     margin-left: 25%;
     display: flex;
     justify-content: space-between;
 }
 
-.botones_formulario{
+.botones_formulario {
     width: 50%;
     height: 70px;
     margin-top: 5%;
     color: #5C708F;
     font-weight: bolder;
-    font-size: 17px;
+    font-size: 1em;
 }
 
-.contenedor_formulario_contenido{
-    width: 80%;
+.contenedor_formulario_contenido {
+    width: 90%;
     margin-left: 10%;
     display: flex;
     flex-direction: column;
 }
 
-.contenedor_formulario_contenido_campos_dobles{
+.contenedor_formulario_contenido_campos_dobles {
+    width: 95%;
     display: flex;
     justify-content: space-between;
 }
 
-.contenedor_formulario_contenido_espacio_campo{
+.contenedor_formulario_contenido_espacio_campo {
     width: 100%;
     height: 70px;
     display: flex;
@@ -49,7 +50,7 @@
     justify-content: space-evenly;
 }
 
-.campo_formulario{
+.campo_formulario {
     width: 90%;
     height: 40px;
     padding: 2%;
@@ -60,8 +61,68 @@
     font-weight: bold;
 }
 
-.botones_validar_formulario{
+.botones_validar_formulario {
     margin-left: 25%;
     border: none;
     border-radius: 10px;
+}
+
+
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+
+    .contenedor_formulario {
+        width: 90%;
+        height: 750px;
+        margin: 5%;
+    }
+
+    .contenedor_formulario_botones {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .contenedor_formulario_contenido_campos_dobles {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contenedor_formulario_contenido_espacio_campo {
+        height: 100px;
+    }
+
+    .campo_formulario {
+        height: 50px;
+    }
+
+}
+
+
+/* RESPONSIVE CELULAR */
+@media (max-width: 480px) {
+
+    .contenedor_formulario {
+        width: 80%;
+        height: 950px;
+        margin: 10%;
+    }
+
+    .contenedor_formulario_botones {
+        width: 100%;
+        height: 20%;
+        margin-left: 10%;
+        flex-direction: column;
+    }
+
+    .botones_formulario {
+        width: 80%;
+    }
+
+    .botones_validar_formulario {
+        width: 90%;
+        margin-top: 15%;
+        margin-left: -10%;
+    }
+    
 }

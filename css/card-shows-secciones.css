@@ -1,0 +1,96 @@
+/* CARDS PARA PRÓXIMOS Y SHOWS HISTORICOS */
+.contenedor-espacio-cards {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.card-proximos-shows {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10%;
+    border: 2px solid #5C708F;
+    border-radius: 10px;
+    background-color: #5C708F;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-imagen {
+    width: 100%;
+    height: 300px;
+    background-image: url("/img/ironmaiden22024.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border-bottom: 5px solid #F3A20B;
+}
+
+
+.card-contenido-escrito {
+    margin: 5%;
+}
+
+.card-contenido-escrito h4 {
+    text-align: center;
+}
+
+.card-fechas-eventos {
+    margin: 7% 0%;
+}
+
+.card-detalles-extra {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-contenedor-dispo-sitio-web {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.card-disponibilidad-evento {
+    width: fit-content;
+    height: 50px;
+    padding: 3%;
+    margin-top: 15%;
+    justify-self: center;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #F3A20B;
+}
+
+
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+
+    .contenedor-espacio-cards {
+        grid-template-columns: 80%;
+    }
+
+}
+
+
+
+/* RESPONSIVE CELULAR */
+@media (max-width: 480px) {
+
+    .card-contenido-escrito {
+        font-size: 1em;
+    }
+
+    .card-contenido-escrito h4 {
+        font-size: 1.3em;
+    }
+
+    .card-disponibilidad-evento {
+        padding: 5%;
+        font-size: 0.8em;
+    }
+
+}

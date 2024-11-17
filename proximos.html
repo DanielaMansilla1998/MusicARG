@@ -4,90 +4,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <meta name="author" content="Daniela Ailen Mansilla">
+    <meta name="copyright" content="Daniela Ailen Mansilla" />
+    <meta http-equiv="Content-Language" content="Español">
+    <meta name="description"
+        content="Sitio web dedicado a informar acerca de Shows y eventos de rock y metal internacional que se realizan en Argentina.">
+    <meta name="keywords" content="Shows, eventos, festivales, música, conciertos, Argentina, rock, pop, metal" />
     
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icono -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Estilos CSS propios-->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/card-entrada.css">
+    <link rel="stylesheet" href="/css/card-shows-secciones.css">
+    <link rel="stylesheet" href="/css/card-shows-especiales.css">
     <title>Próximos shows</title>
 </head>
 
 <body>
 
-    <div class="titulo-sitio">
-        <h1>Shows en Argentina</h1>
-        <h2>Tu espacio de información sobre shows de rock y metal en Argentina.</h2>
-    </div>
+     <!-- Contenedor del título + navbar -->
+     <header>
+        <div class="titulo-sitio">
+            <h1>Shows en Argentina</h1>
+            <h2>Tu espacio de información sobre shows de rock, metal y pop en Argentina.</h2>
+        </div>
+
+        <nav>
+            <ul class="opciones-navbar">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/proximos.html">Próximos eventos</a></li>
+                <li><a href="/shows-historicos.html">Shows históricos</a></li>
+                <li><a href="/recomendados.html">Recomendados</a></li>
+                <li><a href="/acceder.html">Acceder</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    
+    <!-- Sección de próximos shows -->
+    <section class="espacio_shows_proximos_historicos">
+
+        <h2 class="subtitulos">Próximos shows:</h2>
+
+        <div class="contenedor-espacio-cards">
+            <div class="card-proximos-shows">
+                <figure class="card-imagen"></figure>
+                <div class="card-contenido-escrito">
+                    <h4>IRON MAIDEN: The Future Past Tour 2024</h4>
+
+                    <div class="card-fechas-eventos">
+                        <p>01/12/24 - Estadio Huracán</p>
+                        <p>02/12/24 - Movistar Arena</p>
+                    </div>
+
+                    <div class="card-detalles-extra">
+                        <label>Rango de precios: $50.000 - $190.000</label>
+                        <label>Sectores: platea preferencial, platea, campo vip, campo</label>
+                    </div>
 
 
-    <nav>
-        <ul class="opciones-navbar">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/proximos.html">Próximos eventos</a></li>
-            <li><a href="">Shows históricos</a></li>
-            <li><a href="">Recomendados</a></li>
-            <li><a href="/acceder.html">Acceder</a></li>
-        </ul>
-    </nav>
+                    <div class="card-contenedor-dispo-sitio-web">
+                        <div class="card-disponibilidad-evento">
+                            <label><a
+                                    href="https://www.movistararena.com.ar/show/74932074-ef18-45d1-b612-fe0c3e342a24">MOVISTAR
+                                    ARENA</a></label>
+                        </div>
+                        <div class="card-disponibilidad-evento">
+                            <label>AGOTADO</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <h1 class="subtitulos">Registrar nuevo show:</h1>
+            <div class="card-proximos-shows">
+                <figure class="card-imagen"></figure>
+                <div class="card-contenido-escrito">
+                    <h4>IRON MAIDEN: The Future Past Tour 2024</h4>
 
-    <div class="contenedor_entrada">
+                    <div class="card-fechas-eventos">
+                        <p>01/12/24 - Estadio Huracán</p>
+                        <p>02/12/24 - Movistar Arena</p>
+                    </div>
 
-        <div class="contenedor_entrada_borde_color">
+                    <div class="card-detalles-extra">
+                        <label>Rango de precios: $50.000 - $190.000</label>
+                        <label>Sectores: platea preferencial, platea, campo vip, campo</label>
+                    </div>
+
+
+                    <div class="card-contenedor-dispo-sitio-web">
+                        <div class="card-disponibilidad-evento">
+                            <label><a
+                                    href="https://www.movistararena.com.ar/show/74932074-ef18-45d1-b612-fe0c3e342a24">MOVISTAR
+                                    ARENA</a></label>
+                        </div>
+                        <div class="card-disponibilidad-evento">
+                            <label>AGOTADO</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-proximos-shows">
+                <figure class="card-imagen"></figure>
+                <div class="card-contenido-escrito">
+                    <h4>IRON MAIDEN: The Future Past Tour 2024</h4>
+
+                    <div class="card-fechas-eventos">
+                        <p>01/12/24 - Estadio Huracán</p>
+                        <p>02/12/24 - Movistar Arena</p>
+                    </div>
+
+                    <div class="card-detalles-extra">
+                        <label>Rango de precios: $50.000 - $190.000</label>
+                        <label>Sectores: platea preferencial, platea, campo vip, campo</label>
+                    </div>
+
+
+                    <div class="card-contenedor-dispo-sitio-web">
+                        <div class="card-disponibilidad-evento">
+                            <label><a
+                                    href="https://www.movistararena.com.ar/show/74932074-ef18-45d1-b612-fe0c3e342a24">MOVISTAR
+                                    ARENA</a></label>
+                        </div>
+                        <div class="card-disponibilidad-evento">
+                            <label>AGOTADO</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-proximos-shows">
+                <figure class="card-imagen"></figure>
+                <div class="card-contenido-escrito">
+                    <h4>IRON MAIDEN: The Future Past Tour 2024</h4>
+
+                    <div class="card-fechas-eventos">
+                        <p>01/12/24 - Estadio Huracán</p>
+                        <p>02/12/24 - Movistar Arena</p>
+                    </div>
+
+                    <div class="card-detalles-extra">
+                        <label>Rango de precios: $50.000 - $190.000</label>
+                        <label>Sectores: platea preferencial, platea, campo vip, campo</label>
+                    </div>
+
+
+                    <div class="card-contenedor-dispo-sitio-web">
+                        <div class="card-disponibilidad-evento">
+                            <label><a
+                                    href="https://www.movistararena.com.ar/show/74932074-ef18-45d1-b612-fe0c3e342a24">MOVISTAR
+                                    ARENA</a></label>
+                        </div>
+                        <div class="card-disponibilidad-evento">
+                            <label>AGOTADO</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
-        <form class="contenedor_entrada_datos" action="" method="POST">
+    </section>
 
-            <div class="contenedor_entrada_datos_nombre">
-                <label>Artista/Banda/Músico:</label>
-                <input 
-                   class="contenedor_entrada_datos_inputs contenedor_entrada_datos_inputs_nombre" 
-                   type="text" 
-                   placeholder="Nombre del músico" 
-                   required
-                >
-            </div>
+    
+    <!-- Sección para registrar nuevo show -->
+    <section>
+        <h2 class="subtitulos">Registrar nuevo show:</h2>
 
-            <div class="contenedor_entrada_datos_campos_dobles">
-                <label>Fecha del evento:</label>
-                <input 
-                   class="contenedor_entrada_datos_fecha_hora" 
-                   type="date" 
-                   required
-                >
+        <div class="contenedor_entrada">
 
+            <div class="contenedor_entrada_borde_color"></div>
 
-                <label>Lugar:</label>
-                <select class="contenedor_entrada_datos_fecha_hora" name="" id="">
-                    <option value="">Movistar Arena</option>
-                    <option value="">Hipodromo de San Isidro</option>
-                    <option value="">Campo Argentino de Polo</option>
-                    <option value="">Estadio Velez</option>
-                    <option value="">Estadio River Plate</option>
-                    <option value="">Estadio Obras</option>
-                </select>
-            </div>
+            <form class="contenedor_entrada_datos" action="" method="POST">
+
+                <div class="contenedor_entrada_datos_nombre">
+                    <label>Artista/Banda/Músico:</label>
+                    <input class="contenedor_entrada_datos_inputs contenedor_entrada_datos_inputs_nombre" type="text"
+                        placeholder="Nombre del músico" required>
+                </div>
+
+                <div class="contenedor_entrada_datos_campos_dobles">
+                    <label>Fecha del evento:</label>
+                    <input class="contenedor_entrada_datos_fecha_hora" type="date" required>
 
 
-            <div class="contenedor_entrada_datos_campos_dobles">
-                <label>Estado:</label>
-                <select class="contenedor_entrada_datos_fecha_hora" name="" id="">
-                    <option value="">Activo</option>
-                    <option value="">Agotado</option>
-                    <option value="">Próximamente</option>
-                    <option value="">Suspendido</option>
-                    <option value="">Cancelado</option>
-                </select>
-
-                <label>Rango precios:</label>
-                <input class="contenedor_entrada_datos_inputs" type="text" placeholder="Ingrese un rango de precios.">
-            </div>
+                    <label>Lugar:</label>
+                    <select class="contenedor_entrada_datos_fecha_hora" name="" id="">
+                        <option value="">Movistar Arena</option>
+                        <option value="">Hipodromo de San Isidro</option>
+                        <option value="">Campo Argentino de Polo</option>
+                        <option value="">Estadio Velez</option>
+                        <option value="">Estadio River Plate</option>
+                        <option value="">Estadio Obras</option>
+                    </select>
+                </div>
 
 
-            <button class="contenedor_entrada_boton" type="submit">Ingresar</button>
-        </form>
-    </div>
+                <div class="contenedor_entrada_datos_campos_dobles">
+                    <label>Estado:</label>
+                    <select class="contenedor_entrada_datos_fecha_hora" name="" id="">
+                        <option value="">Activo</option>
+                        <option value="">Agotado</option>
+                        <option value="">Próximamente</option>
+                        <option value="">Suspendido</option>
+                        <option value="">Cancelado</option>
+                    </select>
+
+                    <label>Rango precios:</label>
+                    <input class="contenedor_entrada_datos_inputs" type="text"
+                        placeholder="Ingrese un rango de precios.">
+                </div>
+
+
+                <button class="contenedor_entrada_boton" type="submit">Ingresar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <label> &copy; 2024 - MusicARG </label>
+        <div class="contenedor_redes">
+            <a href=""><img class="redes" src="/img/iconos/facebook.png" alt="Icono de la red social Facebook."></a>
+            <a href=""><img class="redes" src="/img/iconos/instagram.png" alt="Icono de la red social Instagram."></a>
+            <a href=""><img class="redes" src="/img/iconos/twitter.png" alt="Icono de la red social X."></a>
+        </div>
+    </footer>
 
 </body>
 

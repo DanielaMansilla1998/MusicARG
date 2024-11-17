@@ -4,63 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniela Ailen Mansilla">
+    <meta name="copyright" content="Daniela Ailen Mansilla" />
+    <meta http-equiv="Content-Language" content="Español">
     <meta name="description"
         content="Sitio web dedicado a informar acerca de Shows y eventos de rock y metal internacional que se realizan en Argentina.">
+    <meta name="keywords" content="Shows, eventos, festivales, música, conciertos, Argentina, rock, pop, metal" />
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icono -->
     <link rel="shortcut icon" href="/img/favicon.ico">
 
+    <!-- Estilos CSS propios-->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/cuadros.css">
     <link rel="stylesheet" href="/css/card-shows-especiales.css">
     <title>Shows en Argentina</title>
 </head>
 
 <body>
 
-    <div class="titulo-sitio">
-        <h1>Shows en Argentina</h1>
-        <h2>Tu espacio de información sobre shows de rock y metal en Argentina.</h2>
-    </div>
+    <!-- Contenedor del título + navbar -->
+    <header>
+        <div class="titulo-sitio">
+            <h1>Shows en Argentina</h1>
+            <h2>Tu espacio de información sobre shows de rock, metal y pop en Argentina.</h2>
+        </div>
 
+        <nav>
+            <ul class="opciones-navbar">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/proximos.html">Próximos eventos</a></li>
+                <li><a href="/shows-historicos.html">Shows históricos</a></li>
+                <li><a href="/recomendados.html">Recomendados</a></li>
+                <li><a href="/acceder.html">Acceder</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        <ul class="opciones-navbar">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/proximos.html">Próximos eventos</a></li>
-            <li><a href="">Shows históricos</a></li>
-            <li><a href="">Recomendados</a></li>
-            <li><a href="/acceder.html">Acceder</a></li>
-        </ul>
-    </nav>
+    </header>
 
+    <!-- Carousel de imágenes de eventos -->
     <main>
-
-        <img class="imagen_principal" src="./img/lollaarg2018.webp" alt="">
-        <!--
-<p>Argentina es el país favorito para muchos de los artistas, grupos y bandas al momento de embarcarse en una
-            gira.</p>
-
-            <img class="imagen_principal" src="/img/lollapalooza.jpg"
-            alt="Imágen del público en una edición del festival lollapalooza en Argentina">
-            -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators colores-carousel">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner imagenes-carousel-principal">
+                <div class="carousel-item active">
+                    <img src="/img/lollaarg2018.webp" class="d-block w-100"
+                        alt="Imágen de la banda británica de rock alternativo, 
+                    Royal Blood, tocando por primera vez en Argentina en el festival Lollapalooza Argentina en su edición del año 2018.">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/movistararena.jpg" class="d-block w-100"
+                        alt="Imágen de la banda Keane dando un show en el predio Movistar Arena Argentina.">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/gdvelez.jpg" class="d-block w-100" alt="Imágen de la banda americana, Green Day, dando un show en Argentina en el 
+                    Estadio Velez en el año 2022.">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon colores-carousel" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon colores-carousel" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
     </main>
 
+    <!--  Contenedor cuadro sección 1 -->
     <section class="contenedor_cuadro">
         <div class="contenedor_cuadro_encabezado">
             <h2>¿Por qué Argentina y no otro país de LATAM?</h2>
         </div>
 
         <ul class="contenedor_cuadro_columnas">
-            <li> <span>Público:</span> pasional, eufórico, con ganas de demostrar su amor por la música y dar lo mejor
+            <li> <span>Público:</span> Pasional, eufórico, con ganas de demostrar su amor por la música y dar lo mejor
                 de sí.</li>
-            <li> <span>Predios:</span> contamos con bares, teatros, arenas, micro-estadios, estadios y predios abiertos
+            <li> <span>Predios:</span> Contamos con bares, teatros, arenas, micro-estadios, estadios y predios abiertos
                 diversos
                 adaptados para
                 cubrir eventos en lugares cerrados y abiertos acorde a las necesidades del público, banda y capacidad
                 necesaría
                 para un evento.
             </li>
-            <li> <span>Precios:</span> atractivo para los extranjeros al momento de decidirse a que país ir para seguir
+            <li> <span>Precios:</span> Atractivo para los extranjeros al momento de decidirse a que país ir para seguir
                 una gira por
                 sus precios
                 accesibles tanto para viaje, estadía y evento. Excelente oportunidad especialmente para europeos en
@@ -69,13 +117,16 @@
             </li>
         </ul>
 
-        <div class="contenedor_imagenes_dobles">
-            <img src="/img/movistararena.jpg"
+        <!-- Contenedor imágenes 
+            <div class="contenedor_imagenes_dobles">
+            <img src="/img/lollapalooza.jpg"
                 alt="Imágen referencia de eventos en vivo con público completo - Movistar Arena Argentina">
-            <img src="/img/lollapalooza.jpg" alt="Imágen del festival Lollapalooza Argentina edición 2022.">
         </div>
+        -->
+
     </section>
 
+    <!-- Contenedor cuadro de recomendaciones -->
     <section class="contenedor_cuadro">
         <div class="contenedor_cuadro_encabezado">
             <h2>Recomendaciones:</h2>
@@ -117,6 +168,7 @@
     </section>
 
 
+    <!-- Sección próximos shows  -->
     <section class="espacio_shows_especiales">
 
         <div class="contenedor_label_anuncio">
@@ -124,26 +176,27 @@
         </div>
 
         <div class="contenedor_card_especial">
-                <figure class="contenedor_card_especial_imagen"></figure>
+            <figure class="contenedor_card_especial_imagen"></figure>
 
-                <div class="contenedor_card_especial_info">
-                    <h4>IRON MAIDEN: The Future Past Tour 2024</h4>
+            <div class="contenedor_card_especial_info">
+                <h4>IRON MAIDEN: The Future Past Tour 2024</h4>
 
-                    <div class="contenedor_card_especial_fechas">
-                        <p>01/12/24 - Estadio Huracán</p>
-                        <p>02/12/24 - Movistar Arena</p>
-                    </div>
-
-                    <label>Rango de precios: $50.000 - $190.000</label>
-
-                    <div class="contenedor_card_especial_disponibilidad">
-                        <label>AGOTADO</label>
-                    </div>
+                <div class="contenedor_card_especial_fechas">
+                    <p>01/12/24 - Estadio Huracán</p>
+                    <p>02/12/24 - Movistar Arena</p>
                 </div>
+
+                <label>Rango de precios: $50.000 - $190.000</label>
+
+                <div class="contenedor_card_especial_disponibilidad">
+                    <label>AGOTADO</label>
+                </div>
+            </div>
         </div>
 
     </section>
 
+    <!-- Contenedor últimos shows -->
     <section class="espacio_shows_especiales">
         <div class="contenedor_label_anuncio">
             <label>Últimos</label>
@@ -165,12 +218,84 @@
                     <label>Disponible</label>
                 </div>
             </div>
-    </div>
+        </div>
     </section>
 
+    <!-- Sección de preguntas frecuentes -->
+    <h3>Preguntas frecuentes:</h3>
+    <section class="nosotros-dudas">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button accordion-colores" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        ¿Quiénes somos?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        En <code>MusicARG</code> somos todos fanáticos de la música y de los shows y festivales en vivo,
+                        y como tales,
+                        nos gusta acercarte información acerca de las bandas y grupos que amamos y de todos los shows y
+                        eventos de rock,
+                        metal, pop y derivados que se den en el país para que estes al tanto y no te pierdas de ninguno.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed accordion-colores" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        ¿Cuál es nuestro objetivo?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Nuestro objetivo es que puedas informarte de las bandas y grupos que sean de tu interés para que
+                        estés al tanto de
+                        sus novedades, discos nuevos, singles y giras que realicen. Nuestro punto fuerte son las redes
+                        sociales, las cuáles podrás
+                        encontrar abajo en nuestro footer para que puedas seguirnos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed accordion-colores" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        ¿Querés sumarte?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Si querés sumarte, ponete en contacto con nosotros a través de nuestro Instagram para que
+                        podamos conversar con vos y
+                        ver si cumplis con el perfil que buscamos. No dudes en contactarte si tenes buenas habilidades
+                        de comunicación, te gusta
+                        la música y sabes mucho al respecto. Indicanos nombre, residencia y género de especialización.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>@2024 - MusicARG</footer>
+    <!-- Footer -->
+    <footer>
+        <label> &copy; 2024 - MusicARG </label>
+        <div class="contenedor_redes">
+            <a href=""><img class="redes" src="/img/iconos/facebook.png" alt="Icono de la red social Facebook."></a>
+            <a href=""><img class="redes" src="/img/iconos/instagram.png" alt="Icono de la red social Instagram."></a>
+            <a href=""><img class="redes" src="/img/iconos/twitter.png" alt="Icono de la red social X."></a>
+        </div>
+    </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
